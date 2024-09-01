@@ -6,6 +6,7 @@ void polynomial(double *fa, double *f, long nx, double p[], int term)
 
     long i;
     int j;
+    #pragma omp parallel for private(x, j)
     for (i = 0; i < nx; i++) {
         x = f[i];
         fa[i] = p[term - 1];
