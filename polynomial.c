@@ -1,18 +1,16 @@
+#include <arm_sve.h>
 #include <math.h>
 
-void polynomial(double *fa, double *f, long nx, double p[], int term)
-{
-    double x;
-
-    long i;
-    int j;
-    #pragma omp parallel for private(x, j)
-    for (i = 0; i < nx; i++) {
-        x = f[i];
-        fa[i] = p[term - 1];
-        for (j = term - 2; j >= 0; j--) {
-            fa[i] *= x;
-            fa[i] += p[j];
+void polynomial(double *restrict fa, double *restrict f, long nx, double *restrict p, int term) {
+    long len = svcntd();
+#pragma omp parallel for
+    for (long i = 0; i < nx; i += len) {
+        svbool_t pg = svwhilelt_b64_u64(i, nx);
+        svfloat64_t result = svdup_f64(p[term - 1]);
+        svfloat64_t x = svld1_f64(pg, &f[i]);
+        for (int j = term - 2; j >= 0; j--) {
+            result = svmad_f64_m(pg, x, result, svdup_f64(p[j]));
         }
+        svst1_f64(pg, &fa[i], result);
     }
 }
