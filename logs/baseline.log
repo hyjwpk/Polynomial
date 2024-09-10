@@ -1,36 +1,36 @@
 test 1 , nx 256, term 5, p0: 0.100000, p[-1]: 0.500000
-iteration 1 compute time:  0.000003 sec
+iteration 1 compute time:  0.000002 sec
 iteration 2 compute time:  0.000002 sec
 iteration 3 compute time:  0.000001 sec
 iteration 4 compute time:  0.000002 sec
 iteration 5 compute time:  0.000002 sec
 compute results are verifed success!
 test 2 , nx 1280000, term 11, p0: 0.100000, p[-1]: 0.600000
-iteration 1 compute time:  0.024387 sec
-iteration 2 compute time:  0.023377 sec
-iteration 3 compute time:  0.023374 sec
-iteration 4 compute time:  0.023291 sec
-iteration 5 compute time:  0.023136 sec
+iteration 1 compute time:  0.024407 sec
+iteration 2 compute time:  0.023359 sec
+iteration 3 compute time:  0.023367 sec
+iteration 4 compute time:  0.023167 sec
+iteration 5 compute time:  0.023144 sec
 compute results are verifed success!
 test 3 , nx 3280000, term 8, p0: 0.250000, p[-1]: 0.600000
-iteration 1 compute time:  0.040895 sec
-iteration 2 compute time:  0.039322 sec
-iteration 3 compute time:  0.038966 sec
-iteration 4 compute time:  0.039458 sec
-iteration 5 compute time:  0.039351 sec
+iteration 1 compute time:  0.040790 sec
+iteration 2 compute time:  0.039145 sec
+iteration 3 compute time:  0.039342 sec
+iteration 4 compute time:  0.039368 sec
+iteration 5 compute time:  0.039006 sec
 compute results are verifed success!
 test 4 , nx 128000000, term 8, p0: 0.250000, p[-1]: 0.600000
-iteration 1 compute time:  1.619648 sec
-iteration 2 compute time:  1.533092 sec
-iteration 3 compute time:  1.533616 sec
-iteration 4 compute time:  1.524844 sec
-iteration 5 compute time:  1.527452 sec
+iteration 1 compute time:  1.622342 sec
+iteration 2 compute time:  1.532122 sec
+iteration 3 compute time:  1.532152 sec
+iteration 4 compute time:  1.534504 sec
+iteration 5 compute time:  1.531988 sec
 compute results are verifed success!
-test 5 , nx 5000000000, term 16, p0: 0.100000, p[-1]: 0.800000
-iteration 1 compute time:151.822279 sec
-iteration 2 compute time:149.160004 sec
-iteration 3 compute time:149.172781 sec
-iteration 4 compute time:149.161666 sec
-iteration 5 compute time:149.183549 sec
+test 5 , nx 5000000000, term 15, p0: 0.100000, p[-1]: 0.900000
+iteration 1 compute time:138.519256 sec
+iteration 2 compute time:135.707257 sec
+iteration 3 compute time:135.721903 sec
+iteration 4 compute time:135.584926 sec
+iteration 5 compute time:135.612581 sec
 compute results are verifed success!
-all test cases compute time is 756.554498 sec.
+all test cases compute time is 689.214135 sec.

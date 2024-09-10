@@ -6,7 +6,7 @@
 #include "polynomial.h"
 
 const long MAX_NX = (8L * 1000L * 1000L * 1000L);
-const double MAX_DIFF = 1e-5;
+const double MAX_DIFF = 1e-8;
 const int ITER_TIMES = 5;
 
 void polynomial_verify(double *fa, double *f, long nx, double p[], int term)
@@ -67,7 +67,7 @@ int main(int argc, char *argv[])
 
     int test = 1;
     int term;
-    double p[20];
+    double p[15];
     int missed = 0;
     int iter;
     while (fscanf(fp, "%ld", &nx) != EOF) {
