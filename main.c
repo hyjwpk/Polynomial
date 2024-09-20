@@ -51,7 +51,7 @@ int CompareResults(double *se, double *seOpt, long size)
 int main(int argc, char *argv[])
 {
     long nx;
-    int i, j;
+    long i, j;
     double max_num = 2.0;
     struct timeval start, stop;
 
@@ -90,7 +90,7 @@ int main(int argc, char *argv[])
         for (iter = 1; iter <= ITER_TIMES; iter++) {
             srand(iter);
             for (j = 0; j < nx; j++) {
-                f[j] = (double)(rand() / (double)(RAND_MAX / max_num) + 2);
+                f[j] = (double)(rand() / (double)(RAND_MAX / max_num));
             }
             gettimeofday(&start, (struct timezone *)0);
             polynomial(fa, f, nx, p, term);
