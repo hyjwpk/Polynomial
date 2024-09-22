@@ -2,7 +2,7 @@ CC := clang
 
 CFLAGS := -g -O3 -ffp-contract=on -mcpu=native -fopenmp
 
-LDFLAGS = -fopenmp
+LDFLAGS = -fopenmp -ljemalloc --rtlib=compiler-rt 
 
 SRC = $(wildcard *.c)
 
