@@ -8,4 +8,4 @@ export OMP_NUM_THREADS=288
 export OMP_PROC_BIND=close
 export OMP_PLACES=threads
 
-./polynomial test.conf
+numactl --cpubind=0,1 ./polynomial test2.conf

@@ -1,0 +1,43 @@
+test 1 , nx 528000000, term 5, p0: 0.050000, p[-1]: 0.250000
+iteration 1 compute time:  6.577595 sec
+iteration 2 compute time:  5.151594 sec
+iteration 3 compute time:  3.795559 sec
+iteration 4 compute time:  3.794887 sec
+iteration 5 compute time:  3.807411 sec
+compute results are verifed success!
+test 2 , nx 528000000, term 7, p0: 0.050000, p[-1]: 0.350000
+iteration 1 compute time:  5.423118 sec
+iteration 2 compute time:  5.401385 sec
+iteration 3 compute time:  5.466277 sec
+iteration 4 compute time:  5.413181 sec
+iteration 5 compute time:  5.393293 sec
+compute results are verifed success!
+test 3 , nx 528000000, term 9, p0: 0.050000, p[-1]: 0.750000
+iteration 1 compute time:  7.522990 sec
+iteration 2 compute time:  7.492795 sec
+iteration 3 compute time:  7.494564 sec
+iteration 4 compute time:  7.509655 sec
+iteration 5 compute time:  7.487140 sec
+compute results are verifed success!
+test 4 , nx 528000000, term 11, p0: 0.150000, p[-1]: 0.650000
+iteration 1 compute time:  9.632286 sec
+iteration 2 compute time:  9.658373 sec
+iteration 3 compute time:  9.669113 sec
+iteration 4 compute time:  9.624898 sec
+iteration 5 compute time:  9.617269 sec
+compute results are verifed success!
+test 5 , nx 528000000, term 13, p0: 0.150000, p[-1]: 0.750000
+iteration 1 compute time: 11.902034 sec
+iteration 2 compute time: 11.939878 sec
+iteration 3 compute time: 11.859225 sec
+iteration 4 compute time: 11.932767 sec
+iteration 5 compute time: 11.902690 sec
+compute results are verifed success!
+test 6 , nx 528000000, term 15, p0: 0.050000, p[-1]: 0.750000
+iteration 1 compute time: 14.307059 sec
+iteration 2 compute time: 14.376963 sec
+iteration 3 compute time: 14.286030 sec
+iteration 4 compute time: 14.304854 sec
+iteration 5 compute time: 14.425077 sec
+compute results are verifed success!
+all test cases compute time is 267.169960 sec.
